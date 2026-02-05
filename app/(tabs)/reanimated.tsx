@@ -10,7 +10,7 @@ import Animated, {
 } from "react-native-reanimated";
 import Svg, { Circle } from "react-native-svg";
 
-export default function Index() {
+export default function Reanimated() {
   const firstwidth = useSharedValue(100);
   const translateX = useSharedValue(0);
   const AnimatedCircle = createAnimatedComponent(Circle);
