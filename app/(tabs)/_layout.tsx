@@ -8,16 +8,28 @@ export default function RootLayout() {
         name="index"
         options={{
           title: "Home",
-          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="house" />,
+          tabBarIcon: ({ color, focused }) => (
+            <MaterialIcons
+              size={28}
+              name="house"
+              color={focused ? "blue" : "gray"}
+            />
+          ),
+          tabBarBadge: "10",
         }}
       />
       <Tabs.Screen
         name="reanimated"
         options={{
           title: "Reanimated",
-          tabBarIcon: ({ color }) => (
-            <MaterialIcons size={28} name="animation" />
+          tabBarIcon: ({ color, focused }) => (
+            <MaterialIcons
+              size={28}
+              name="animation"
+              color={focused ? "blue" : "gray"}
+            />
           ),
+          tabBarBadge: "5",
         }}
       />
     </Tabs>
