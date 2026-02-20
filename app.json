@@ -1,10 +1,12 @@
 {
   "expo": {
     "name": "my-react-native-app",
+    "description": "This is testing app for me for learning react native with their tools and other stuffs releated to react native",
     "slug": "my-react-native-app",
+    "owner": "Pushpaje",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/react-native-icon.png",
     "scheme": "myreactnativeapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -31,7 +33,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/react-native-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
@@ -40,6 +42,17 @@
           }
         }
       ]
+    //  [
+    //   "expo-navigation-bar",
+    //   {
+    //     "backgroundColor": "#0f172a",
+    //       "barStyle": "light",
+    //       "borderColor": "#1f2937",
+    //       "visibility": "visible",
+    //       "behavior": "inset-swipe",
+    //       "position": "relative"
+    //   }
+    //  ]
     ],
     "experiments": {
       "typedRoutes": true,

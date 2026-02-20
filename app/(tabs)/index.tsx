@@ -1,9 +1,19 @@
-import { Text, View } from "react-native";
+import * as NavigationBar from "expo-navigation-bar";
+import { StatusBar } from "expo-status-bar";
+import { useEffect } from "react";
+import { Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
+  useEffect(() => {
+    NavigationBar.setBackgroundColorAsync("#022c22");
+    NavigationBar.setButtonStyleAsync("dark");
+  }, []);
+
   return (
-    <View className="flex-1 justify-center items-center">
-      <Text>Index Page</Text>
-    </View>
+    <SafeAreaView className="flex-1 items-center justify-center bg-emerald-950">
+      <StatusBar style="light" animated networkActivityIndicatorVisible />
+      <Text className="text-white">Index</Text>
+    </SafeAreaView>
   );
 }
